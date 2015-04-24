@@ -1,0 +1,25 @@
+{
+  "name": "ng-http-cancel",
+  "version": "0.0.1",
+  "description": "A cancelable $http service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "http",
+    "cancel",
+    "resource"
+  ],
+  "author": "Logan Barnett",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-karma": "0.0.4",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
