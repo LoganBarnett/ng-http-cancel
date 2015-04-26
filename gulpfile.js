@@ -2,6 +2,12 @@
 
 var gulp = require('gulp');
 var karma = require('karma').server;
+var coveralls = require('gulp-coveralls');
+
+gulp.task('coveralls', function() {
+  return gulp.src('test/coverage/**/lcov.info')
+    .pipe(coveralls());
+})
 
 gulp.task('test', function(done) {
   karma.start({
