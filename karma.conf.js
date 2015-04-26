@@ -17,8 +17,16 @@ module.exports = function(config) {
       , 'index.spec.js'
     ],
 
-    preprocessors: {
-      '**/*.html': 'ng-html2js'
+    reporters: ['coverage']
+
+    , coverageReporter: {
+        type: 'lcovonly'
+      , dir: 'coverage/karma'
+    }
+
+    , preprocessors: {
+        '**/*.html': 'ng-html2js'
+      , 'index.js': 'coverage'
     },
 
     //babelPreProcessor;
