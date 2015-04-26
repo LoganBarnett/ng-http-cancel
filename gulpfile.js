@@ -5,7 +5,7 @@ var karma = require('karma').server;
 var coveralls = require('gulp-coveralls');
 
 gulp.task('coveralls', function() {
-  return gulp.src('test/coverage/**/lcov.info')
+  return gulp.src('coverage/**/lcov.info')
     .pipe(coveralls());
 })
 
