@@ -1,6 +1,8 @@
 # ng-http-cancel
 Cancelable $http wrapper.
 
+[![Coverage Status](https://coveralls.io/repos/LoganBarnett/ng-http-cancel/badge.svg)](https://coveralls.io/r/LoganBarnett/ng-http-cancel)
+
 ## Installation
 
 `bower install ng-http-cancel --save`
