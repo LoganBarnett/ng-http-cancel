@@ -1,7 +1,7 @@
 # ng-http-cancel
 Cancelable $http wrapper.
 
-[![Build Status](https://travis-ci.org/LoganBarnett/ng-http-cancel.svg?branch=master)](https://travis-ci.org/LoganBarnett/ng-http-cancel)
+[![Build Status](https://travis-ci.org/LoganBarnett/ng-http-cancel.svg?branch=master)](https://travis-ci.org/LoganBarnett/ng-http-cancel) [![Coverage Status](https://coveralls.io/repos/LoganBarnett/ng-http-cancel/badge.svg)](https://coveralls.io/r/LoganBarnett/ng-http-cancel)
 
 ## Installation
 
