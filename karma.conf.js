@@ -17,7 +17,7 @@ module.exports = function(config) {
       , 'index.spec.js'
     ],
 
-    reporters: ['coverage']
+    reporters: ['progress', 'coverage']
 
     , coverageReporter: {
         type: 'lcovonly'
