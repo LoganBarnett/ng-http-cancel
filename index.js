@@ -14,7 +14,7 @@ angular.module('ng-http-cancel', [])
           cancelableDeferred.timedOut = true;
           cancelableDeferred.resolve('timeout');
         }
-      }, config.timeout);
+      }, config.timeout || 30 * 1000);
 
       config.timeout = cancelableDeferred.promise;
 

@@ -84,6 +84,25 @@ describe('ng-http-cancel', function() {
     });
   });
 
+  it('uses the default timeout', function(done) {
+    inject(function(ngHttpCancel, $timeout) {
+      $httpBackend.expectGET('/api/v1/foo').respond({foo: 'bar'});
+      var promise = ngHttpCancel.get('/api/v1/foo');
+
+      promise.then(function(result) {
+        expect(result.data).toEqual({foo: 'bar'});
+        done();
+      }, function(error) {
+        done.fail('expected promise to succeed but got error instead', error);
+      });
+
+      $timeout(function() {
+        $httpBackend.flush();
+      }, 1500);
+      $timeout.flush();
+    });
+  });
+
   it('rejects the promise when an $http reject occurs', function(done) {
     inject(function(ngHttpCancel, $timeout) {
       $httpBackend.expectGET('/api/v1/foo').respond(500);
