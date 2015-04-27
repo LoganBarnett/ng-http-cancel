@@ -1,6 +1,6 @@
 {
   "name": "ng-http-cancel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cancelable $http service.",
   "main": "index.js",
   "repository": "https://github.com/LoganBarnett/ng-http-cancel",
